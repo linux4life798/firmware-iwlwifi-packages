@@ -1,0 +1,34 @@
+### Commented entries have reasonable defaults.
+### Uncomment to edit them.
+# Source: <source package name; defaults to package name>
+Section: non-free/kernel
+Priority: optional
+# Homepage: <enter URL here; no default>
+Standards-Version: 3.9.2
+
+Package: firmware-iwlwifi-7260
+Version: 1.0
+Maintainer: Craig Hesling <craig@hesling.com>
+# Pre-Depends: <comma-separated list of packages>
+# Depends: <comma-separated list of packages>
+# Recommends: <comma-separated list of packages>
+# Suggests: <comma-separated list of packages>
+# Provides: <comma-separated list of packages>
+# Replaces: <comma-separated list of packages>
+Architecture: all
+# Copyright: <copyright file; defaults to GPL2>
+Copyright: iwlwifi-7260-ucode-25.30.14.0/LICENSE.iwlwifi-7260-ucode
+# Changelog: <changelog file; defaults to a generic changelog>
+# Readme: <README.Debian file; defaults to a generic one>
+# Extra-Files: <comma-separated list of additional files for the doc directory>
+# Files: <pair of space-separated paths; First is file to include, second is destination>
+#  <more pairs, if there's more than one file to include. Notice the starting space>
+Files: iwlwifi-7260-14.ucode /lib/firmware
+Description: Binary firmware for Intel Wireless 7260 card
+ This package contains the newest firmware microde for the Intel Dual Band Wireless 7260.
+ The firware was downloaded from http://www.intel.com/support/wireless/wlan/sb/CS-034398.htm
+ on October 3, 2015.
+ .
+ Contents:
+  * Intel Wireless 7260 firmware, version 25.30.14.0
+    (iwlwifi-7260-14.ucode)
