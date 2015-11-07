@@ -1,0 +1,40 @@
+### Commented entries have reasonable defaults.
+### Uncomment to edit them.
+# Source: <source package name; defaults to package name>
+Section: non-free/kernel
+Priority: optional
+# Homepage: <enter URL here; no default>
+Standards-Version: 3.9.2
+
+Package: firmware-iwlwifi-7265
+Version: 1.0
+Maintainer: Craig Hesling <craig@hesling.com>
+# Pre-Depends: <comma-separated list of packages>
+# Depends: <comma-separated list of packages>
+# Recommends: <comma-separated list of packages>
+# Suggests: <comma-separated list of packages>
+# Provides: <comma-separated list of packages>
+Provides: firmware-iwlwifi
+# Replaces: <comma-separated list of packages>
+Replaces: firmware-iwlwifi
+Architecture: all
+# Copyright: <copyright file; defaults to GPL2>
+Copyright: iwlwifi-7265-ucode-25.30.14.0/LICENSE.iwlwifi-7265-ucode
+# Changelog: <changelog file; defaults to a generic changelog>
+# Readme: <README.Debian file; defaults to a generic one>
+Readme: iwlwifi-7265-ucode-25.30.14.0/README.iwlwifi-7265-ucode
+# Extra-Files: <comma-separated list of additional files for the doc directory>
+# Files: <pair of space-separated paths; First is file to include, second is destination>
+#  <more pairs, if there's more than one file to include. Notice the starting space>
+Files: iwlwifi-7265-14.ucode /lib/firmware
+	iwlwifi-7265D-14.ucode /lib/firmware
+Description: Binary firmware for Intel Wireless 7265 card
+ This package contains the newest firmware microde for the Intel Dual Band Wireless 7265.
+ The firware was downloaded from http://www.intel.com/support/wireless/wlan/sb/CS-034398.htm
+ on November 6, 2015.
+ .
+ Contents:
+  * Intel Wireless 7265 firmware, version 25.30.14.0
+    (iwlwifi-7265-14.ucode)
+  * Intel Wireless 7265D firmware, version 25.30.14.0
+    (iwlwifi-7265D-14.ucode)
